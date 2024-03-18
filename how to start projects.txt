@@ -1,0 +1,31 @@
+On Windows:
+Install via Scoop:
+Run these two commands on powershell for scoop installations
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+
+then install pipx by scoop:
+Run command
+scoop install pipx
+pipx ensurepath
+
+and then:
+Install poetry (our target)
+Run command
+pipx install poetry
+
+and then restart the powershell
+check the version by running the following command:
+poetry --version
+
+installation completed!!
+
+Now for the project you can click the link poetry doc
+
+Poetry project creation
+
+create a folder for poetry projects just like we did for python:
+
+run command after opening in folder powershell
+poetry new rp-poetry --src
